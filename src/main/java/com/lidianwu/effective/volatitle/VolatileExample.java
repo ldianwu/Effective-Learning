@@ -20,7 +20,7 @@ public class VolatileExample extends Thread {
          * 可见性的问题：
          *
          * 如果下面run方法里的while循环不执行任何代码块，也就是说当main线程修改了变量，
-         * 线程一对flag变量的值是不可见的，线程一从内存中读入cpu高速缓存的还是falg=false这个值
+         * 线程一对flag变量的值是不可见的，线程一从内存中读入cpu高速缓存的还是flag=false这个值
          *
          * 解决办法在flag前加上volatile
          *
